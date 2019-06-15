@@ -86,35 +86,3 @@ function clearCanvas() {
     draw();
     document.getElementById("rec_result").innerHTML = "";
 }
-
-function predict() {
-	document.getElementById("rec_result").innerHTML = "Predicting...";
-		
-	var canvas = document.getElementById("the_stage");
-	var dataURL = canvas.toDataURL('image/png');//.replace("image/png", "image/octet-stream");
-//	document.getElementById("rec_result").innerHTML = dataURL;
-	
-	$.ajax({
-		type: "POST",
-		url: "main.php",
-		data:{
-			imageBase64: dataURL
-		}
-	}).done(function(response) {
-//		console.log(response)
-//		if (response == "Can't predict, when nothing is drawn") {
-//			document.getElementById("rec_result").innerHTML = response;
-//		} else {
-//			//answers = response
-////			document.getElementById("answer_reaction").innerHTML = "";
-//			var response = JSON.parse(response)
-//			document.getElementById("rec_result").innerHTML = response["answer"];
-////          document.getElementById("rec_result").innerHTML="StartOkk"
-//
-//		}
-        document.getElementById("rec_result").innerHTML = response;
-	});
-}
-
-// https://stackoverflow.com/questions/16057256/draw-on-a-canvas-via-mouse-and-touch
-// https://bencentra.com/code/2014/12/05/html5-canvas-touch-events.html
