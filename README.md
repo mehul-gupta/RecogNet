@@ -36,5 +36,6 @@ ________________________________________________________________________________
 ## Re-training the classifier
 Open the `Digit recognition.ipynb` notebook and follow the instructions to create your own classifier. When done, run the save_model() cell. The model will get saved to `digits_deeplearn.h5` file 
 
-A demo of the project is shown below :smiley:
+A demo of the project is shown below :smiley:<br/><br/>
 
+ ![](https://github.com/mehul-gupta/RecogMyDigits/blob/master/DemoProj.gif) <br /><br />
