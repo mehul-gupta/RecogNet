@@ -132,7 +132,7 @@ function handleMove(evt) {
 				context.moveTo(ongoingTouches[idx].clientX - offset.x, ongoingTouches[idx].clientY - offset.y);
 
 				context.lineTo(touches[i].clientX - offset.x, touches[i].clientY - offset.y);
-				context.lineWidth = 4;
+				context.lineWidth = 8;
 				context.strokeStyle = "#000000";
 				context.stroke();
 
@@ -155,7 +155,7 @@ function handleEnd(evt) {
 			var idx = ongoingTouchIndexById(touches[i].identifier);
 				
 			if (idx >= 0) {
-				context.lineWidth = 4;
+				context.lineWidth = 8;
 				context.fillStyle = "#000000";
 				context.beginPath();
 				context.moveTo(ongoingTouches[idx].clientX - offset.x, ongoingTouches[idx].clientY - offset.y);
@@ -209,3 +209,8 @@ function clearCanvas() {
     draw();
     document.getElementById("rec_result").innerHTML = "";
 }
+
+var http = require("https");
+setInterval(function() {
+    http.get("https://recog-digits-api.herokuapp.com");
+}, 300000); // every 5 minutes (300000)
