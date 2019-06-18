@@ -1,9 +1,23 @@
-#headerimg
-{
-    margin: 0 0 0 10%;
+@media only screen and (max-width: 600px) {
+    body{
+        margin-top: 10pt;
+    }
+    #pred_text {
+        margin-left: 18pt;
+        font-size: 160%;
+    }
+    #rec_result{
+        margin-left: 18pt;
+        font-size: 160%;
+    }
+    #p{
+        font-size: 16px;    
+    }
 }
 body
 {
+    height: auto;
+    overflow: auto;
     background-color: #ffffff;
 }
 #the_stage
@@ -27,19 +41,19 @@ body
 }
 #button
 {
-
 	padding: 0;
     margin-left: auto;
 }
 .butt
 {
-    margin: 0px 10px 0px 10px;
+    margin: 0px 10px 20px 10px;
     width: 90px;
     font-size: 16px;
 }
 p
 {
-    font-size: 16px;
+    padding-bottom: 7.5rem;
+    font-size: 14pt;
 }
 #my_column
 {
