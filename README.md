@@ -39,3 +39,8 @@ Open the `Digit recognition.ipynb` notebook and follow the instructions to creat
 A demo of the project is shown below :smiley:<br/><br/>
 
  ![](https://github.com/mehul-gupta/RecogMyDigits/blob/master/DemoProj.gif) <br /><br />
+
+For information on how the model works, please refer to:
+* https://machinelearningmastery.com/handwritten-digit-recognition-using-convolutional-neural-networks-python-keras/
+and 
+* https://towardsdatascience.com/a-simple-2d-cnn-for-mnist-digit-recognition-a998dbc1e79a
