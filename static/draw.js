@@ -210,7 +210,6 @@ function clearCanvas() {
     document.getElementById("rec_result").innerHTML = "";
 }
 
-var http = require("https");
 setInterval(function() {
-    http.get("https://recog-digits-api.herokuapp.com");
+    location.reload();
 }, 300000); // every 5 minutes (300000)
