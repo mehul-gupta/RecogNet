@@ -105,7 +105,7 @@ PyYAML==5.1.1
 pyzmq==17.0.0
 qtconsole==4.3.1
 requests==2.22.0
-rsa==4.0
+rsa==4.7
 scikit-image==0.14.0
 scikit-learn==0.19.1
 scipy==1.1.0
