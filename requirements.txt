@@ -92,7 +92,7 @@ PyAudio==0.2.11
 pycuda==2017.1.1
 Pygments==2.2.0
 pyparsing==2.2.0
-PyPDF2==1.26.0
+PyPDF2==1.27.5
 pyshp==1.2.12
 pystan==2.18.1.0
 pytest==3.6.3
